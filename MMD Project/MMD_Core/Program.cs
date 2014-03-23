@@ -11,6 +11,8 @@ namespace MMD_Core
 {
     class Program
     {
+        private static string KServerAddress = "http://cloud.mm-day.com";
+
         static void Main(string[] args)
         {
             string nick = "miki";
@@ -18,43 +20,19 @@ namespace MMD_Core
             //string email = "miky_santa@yahoo.com";
             //RegisterUser(nick, pass, email);
 
+            var images = GetImageList();
+
             SignIn(nick, pass);
 
             Console.ReadLine();
         }
 
-        private static void SignIn(string nick, string pass)
+        public enum ERequestType
         {
-            var user = new UserSignIn()
-            {
-                NICKNAME = nick,
-                PASSWORD = pass
-            };
-
-            string json = JsonConvert.SerializeObject(user);
-
-            WebRequest request = WebRequest.Create("http://cloud.mm-day.com/User/Auth");
-            request.Method = "POST";
-            byte[] byteArray = Encoding.UTF8.GetBytes(json);
-            request.ContentType = "application/json";
-            request.ContentLength = byteArray.Length;
-
-            Stream dataStream = request.GetRequestStream();
-            dataStream.Write(byteArray, 0, byteArray.Length);
-            dataStream.Close();
-
-            WebResponse response = request.GetResponse();
-            Console.WriteLine(((HttpWebResponse)response).StatusDescription);
-
-            dataStream = response.GetResponseStream();
-            StreamReader reader = new StreamReader(dataStream);
-            string responseFromServer = reader.ReadToEnd();
-            Console.WriteLine(responseFromServer);
-
-            // Clean up the streams.
-            reader.Close();
-            dataStream.Close();
-            response.Close();
+            POST,
+            PUT,
+            GET,
+            DELETE
         }
 
         private static void RegisterUser(string nickname, string pass, string email)
@@ -68,28 +46,71 @@ namespace MMD_Core
 
             string json = JsonConvert.SerializeObject(user);
 
-            WebRequest request = WebRequest.Create("http://cloud.mm-day.com/User/Auth");
-            request.Method = "PUT";
+            Stream dataStream;
+            SendRequest(ERequestType.PUT, json, KServerAddress + "/User/Auth", out dataStream);
+
+            Debug_PrintStream(dataStream);
+            dataStream.Close();
+        }
+
+        private static void SignIn(string nick, string pass)
+        {
+            var user = new UserSignIn()
+            {
+                NICKNAME = nick,
+                PASSWORD = pass
+            };
+
+            string json = JsonConvert.SerializeObject(user);
+
+            Stream dataStream;
+            SendRequest(ERequestType.POST, json, KServerAddress + "/User/Auth", out dataStream);
+            Debug_PrintStream(dataStream);
+
+            dataStream.Close();
+        }
+
+        private static IList<string> GetImageList()
+        {
+            IList<string> images = new List<string>();
+
+            Stream dataStream;
+            SendRequest(ERequestType.POST, "", KServerAddress + "/Fun/Imagini", out dataStream);
+
+            Debug_PrintStream(dataStream);
+
+            return images;
+        }
+
+        private static void SendRequest(ERequestType eRequestType, string json, string addr, out Stream dataStream)
+        {
+            WebRequest request = WebRequest.Create(addr);
+            request.Method = eRequestType.ToString();//TODO : fix this shit. This is not safe
             byte[] byteArray = Encoding.UTF8.GetBytes(json);
             request.ContentType = "application/json";
             request.ContentLength = byteArray.Length;
 
-            Stream dataStream = request.GetRequestStream();
-            dataStream.Write(byteArray, 0, byteArray.Length);
-            dataStream.Close();
+            Stream stream = request.GetRequestStream();
+            stream.Write(byteArray, 0, byteArray.Length);
+            stream.Close();
 
             WebResponse response = request.GetResponse();
             Console.WriteLine(((HttpWebResponse)response).StatusDescription);
 
             dataStream = response.GetResponseStream();
+
+            //cleanup the streams
+            response.Close();
+        }
+
+        private static void Debug_PrintStream(Stream dataStream)
+        {
             StreamReader reader = new StreamReader(dataStream);
             string responseFromServer = reader.ReadToEnd();
             Console.WriteLine(responseFromServer);
 
             // Clean up the streams.
             reader.Close();
-            dataStream.Close();
-            response.Close();
         }
     }
 
