@@ -4,4 +4,10 @@
   <string name="ApplicationName">MMD_Android</string>
   <string name="Login">Login</string>
   <string name="Signup">Sign up</string>
+  <string name="Categories">Categories</string>"
+  <string name="Messages">Messages</string>
+  <string name="Friends">Friends</string>
+  <string name="Groups">Groups</string>
+  <string name="Memoticons">Memoticons</string>
+  <string name="Settings">Settings</string>
 </resources>

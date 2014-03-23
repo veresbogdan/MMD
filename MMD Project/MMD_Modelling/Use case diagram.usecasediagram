@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="7e29f87b-a208-44fa-8d26-dbdcb6c63bb9" name="Use case diagram" linkedPackageId="4cbfe79b-01d3-48c0-b8ab-cdae00bed487" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="06413afd-61eb-4669-adb2-ede440eca93a">
+      <profileInstance Id="d10cc4cb-b105-4fea-a723-ed9ce33cb74b" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="fc7c1352-2f98-474c-bc24-95e40546d4c9">
+      <profileInstance Id="92b6c73c-089c-42c6-9027-d2ede490d446" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="4dc860f1-0749-4944-a39d-2d8d9dcb77f1" name="Actor1" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ae2e643e-85b3-43fc-88b4-09b82b0de36c" />
+        <targetEnds>
+          <association Id="6f19640f-6402-4a7b-8911-31215a70de8c" isDerived="false" sourceEndRoleName="Actor1" targetEndRoleName="Sign up" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="4d2ad813-61d3-4570-8378-6d6a4cdd105f" LastKnownName="Sign up" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="059f9ae1-60b4-4384-978a-08b31c1639b7" name="Actor1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="03107d8d-8aaf-45ad-ab7c-95734f1422de" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fb9f90a1-8014-4566-ac6b-3851f5b040b0" name="Sign up" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9042df9a-682d-49de-8371-065bc7fffb47" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="afd48a8e-4855-4773-96cb-43e41c676ef4" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="4d2ad813-61d3-4570-8378-6d6a4cdd105f" name="Sign up" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fde84ff7-b845-4eac-9cc5-589001f11194" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="4cbfe79b-01d3-48c0-b8ab-cdae00bed487" name="MMD_Modelling">
+    <elementDefinition Id="e2fc2c65-07db-48b0-b118-69b7481a7925" />
+  </package>
+</useCaseModelRoot>

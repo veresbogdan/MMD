@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
-MinimumVisualStudioVersion = 10.0.40219.1
+# Visual Studio 2012
+VisualStudioVersion = {0}
+MinimumVisualStudioVersion = {0}
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MMD_Core", "MMD_Core\MMD_Core.csproj", "{3F1E66E4-FF17-44CE-AD5A-6B220F1B874D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MMD_Android", "MMD_Android\MMD_Android.csproj", "{2C3448B4-A7C8-4887-ABF4-54502812FCD8}"
+EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "MMD_Modelling", "MMD_Modelling\MMD_Modelling.modelproj", "{F8CFDE8E-4071-4670-ABD4-2FF0B0FB0CCD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,16 +15,23 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3F1E66E4-FF17-44CE-AD5A-6B220F1B874D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3F1E66E4-FF17-44CE-AD5A-6B220F1B874D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3F1E66E4-FF17-44CE-AD5A-6B220F1B874D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3F1E66E4-FF17-44CE-AD5A-6B220F1B874D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2C3448B4-A7C8-4887-ABF4-54502812FCD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2C3448B4-A7C8-4887-ABF4-54502812FCD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C3448B4-A7C8-4887-ABF4-54502812FCD8}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
 		{2C3448B4-A7C8-4887-ABF4-54502812FCD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C3448B4-A7C8-4887-ABF4-54502812FCD8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2C3448B4-A7C8-4887-ABF4-54502812FCD8}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{3F1E66E4-FF17-44CE-AD5A-6B220F1B874D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F1E66E4-FF17-44CE-AD5A-6B220F1B874D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F1E66E4-FF17-44CE-AD5A-6B220F1B874D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F1E66E4-FF17-44CE-AD5A-6B220F1B874D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8CFDE8E-4071-4670-ABD4-2FF0B0FB0CCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8CFDE8E-4071-4670-ABD4-2FF0B0FB0CCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8CFDE8E-4071-4670-ABD4-2FF0B0FB0CCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8CFDE8E-4071-4670-ABD4-2FF0B0FB0CCD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = MMD_Android\MMD_Android.csproj
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
