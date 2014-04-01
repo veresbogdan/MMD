@@ -5,6 +5,8 @@ VisualStudioVersion = {0}
 MinimumVisualStudioVersion = {0}
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MMD_Android", "MMD_Android\MMD_Android.csproj", "{2C3448B4-A7C8-4887-ABF4-54502812FCD8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MMD_Core_v2", "MMD_Core_v2\MMD_Core_v2.csproj", "{AD1B2671-02A2-4B2A-846B-34E99B9F9471}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +19,10 @@ Global
 		{2C3448B4-A7C8-4887-ABF4-54502812FCD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C3448B4-A7C8-4887-ABF4-54502812FCD8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2C3448B4-A7C8-4887-ABF4-54502812FCD8}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{AD1B2671-02A2-4B2A-846B-34E99B9F9471}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD1B2671-02A2-4B2A-846B-34E99B9F9471}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD1B2671-02A2-4B2A-846B-34E99B9F9471}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD1B2671-02A2-4B2A-846B-34E99B9F9471}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = MMD_Android\MMD_Android.csproj

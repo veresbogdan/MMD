@@ -90,4 +90,10 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  <ItemGroup>
+    <ProjectReference Include="..\MMD_Core_v2\MMD_Core_v2.csproj">
+      <Project>{AD1B2671-02A2-4B2A-846B-34E99B9F9471}</Project>
+      <Name>MMD_Core_v2</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>
