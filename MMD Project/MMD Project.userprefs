@@ -1,12 +1,17 @@
-﻿<Properties>
+﻿<Properties GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="MMD_Android\activities\LoginSignup.cs">
     <Files>
-      <File FileName="MMD_Android\activities\LoginSignup.cs" Line="15" Column="21" />
+      <File FileName="MMD_Android\activities\LoginSignup.cs" Line="39" Column="21" />
+      <File FileName="MMD_Core_v2\Models\User.cs" Line="11" Column="34" />
+      <File FileName="MMD_Core_v2\Services\UserService.cs" Line="11" Column="22" />
+      <File FileName="MMD_Android\activities\BaseActivity.cs" Line="1" Column="1" />
+      <File FileName="MMD_Android\activities\Home.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.MMD__Android AndroidDeviceId-Debug="emulator-5554" MonoForAntroid.PreferredDevice="Xperia Z1" />
 </Properties>

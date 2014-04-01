@@ -18,9 +18,16 @@ namespace MMD_Android.activities
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
+			String extra = Intent.GetStringExtra ("User") ?? "Data not available";
 
             // Create your application here
-            SetContentView(Resource.Layout.Home);
+			TextView textView = new TextView(this);
+			textView.TextSize = 30;
+			textView.Text = extra;
+
+			// Set the text view as the activity layout
+			SetContentView(textView);
+			//SetContentView(Resource.Layout.Home);
         }
     }
 }
