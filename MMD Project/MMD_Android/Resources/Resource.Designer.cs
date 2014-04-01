@@ -97,23 +97,41 @@ namespace MMD_Android
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f070005
-			public const int MyButton = 2131165189;
-			
 			// aapt resource value: 0x7f070001
-			public const int button1 = 2131165185;
-			
-			// aapt resource value: 0x7f070002
-			public const int button2 = 2131165186;
+			public const int button_Categories = 2131165185;
 			
 			// aapt resource value: 0x7f070003
-			public const int button_Login = 2131165187;
+			public const int button_Friends = 2131165187;
 			
 			// aapt resource value: 0x7f070004
-			public const int button_Signup = 2131165188;
+			public const int button_Groups = 2131165188;
+			
+			// aapt resource value: 0x7f070008
+			public const int button_Login = 2131165192;
+			
+			// aapt resource value: 0x7f070005
+			public const int button_Memoticons = 2131165189;
+			
+			// aapt resource value: 0x7f070002
+			public const int button_Messages = 2131165186;
+			
+			// aapt resource value: 0x7f070009
+			public const int button_Signup = 2131165193;
+			
+			// aapt resource value: 0x7f07000a
+			public const int editText1 = 2131165194;
+			
+			// aapt resource value: 0x7f07000b
+			public const int editText2 = 2131165195;
+			
+			// aapt resource value: 0x7f070006
+			public const int email_input_field = 2131165190;
 			
 			// aapt resource value: 0x7f070000
 			public const int imageView1 = 2131165184;
+			
+			// aapt resource value: 0x7f070007
+			public const int password_input_field = 2131165191;
 			
 			static Id()
 			{
@@ -134,9 +152,6 @@ namespace MMD_Android
 			// aapt resource value: 0x7f030001
 			public const int LoginSignup = 2130903041;
 			
-			// aapt resource value: 0x7f030002
-			public const int Main = 2130903042;
-			
 			static Layout()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -153,11 +168,29 @@ namespace MMD_Android
 			// aapt resource value: 0x7f050001
 			public const int ApplicationName = 2131034113;
 			
+			// aapt resource value: 0x7f050004
+			public const int Categories = 2131034116;
+			
+			// aapt resource value: 0x7f050006
+			public const int Friends = 2131034118;
+			
+			// aapt resource value: 0x7f050007
+			public const int Groups = 2131034119;
+			
 			// aapt resource value: 0x7f050000
 			public const int Hello = 2131034112;
 			
 			// aapt resource value: 0x7f050002
 			public const int Login = 2131034114;
+			
+			// aapt resource value: 0x7f050008
+			public const int Memoticons = 2131034120;
+			
+			// aapt resource value: 0x7f050005
+			public const int Messages = 2131034117;
+			
+			// aapt resource value: 0x7f050009
+			public const int Settings = 2131034121;
 			
 			// aapt resource value: 0x7f050003
 			public const int Signup = 2131034115;

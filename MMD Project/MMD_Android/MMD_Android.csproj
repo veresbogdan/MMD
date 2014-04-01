@@ -48,7 +48,6 @@
     <Compile Include="activities\BaseActivity.cs" />
     <Compile Include="activities\Home.cs" />
     <Compile Include="activities\LoginSignup.cs" />
-    <Compile Include="Activity1.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

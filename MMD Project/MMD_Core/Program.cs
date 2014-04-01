@@ -22,7 +22,7 @@ namespace MMD_Core
 
             var images = GetImageList();
 
-            SignIn(nick, pass);
+            //SignIn(nick, pass);
 
             Console.ReadLine();
         }
@@ -74,15 +74,33 @@ namespace MMD_Core
         {
             IList<string> images = new List<string>();
 
-            Stream dataStream;
-            SendRequest(ERequestType.POST, "", KServerAddress + "/Fun/Imagini", out dataStream);
+            WebRequest request = WebRequest.Create("http://cloud.mm-day.com/Fun/Imagini");
+            request.Method = "POST";
+            byte[] byteArray = Encoding.UTF8.GetBytes("");
+            request.ContentType = "application/json";
+            request.ContentLength = byteArray.Length;
 
-            Debug_PrintStream(dataStream);
+            Stream dataStream = request.GetRequestStream();
+            dataStream.Write(byteArray, 0, byteArray.Length);
+            dataStream.Close();
+
+            WebResponse response = request.GetResponse();
+            Console.WriteLine(((HttpWebResponse)response).StatusDescription);
+
+            dataStream = response.GetResponseStream();
+            StreamReader reader = new StreamReader(dataStream);
+            string responseFromServer = reader.ReadToEnd();
+            Console.WriteLine(responseFromServer);
+
+            // Clean up the streams.
+            reader.Close();
+            dataStream.Close();
+            response.Close();
 
             return images;
         }
 
-        private static void SendRequest(ERequestType eRequestType, string json, string addr, out Stream dataStream)
+        private static void SendRequest(ERequestType eRequestType, string json, string addr, out Stream respStream)
         {
             WebRequest request = WebRequest.Create(addr);
             request.Method = eRequestType.ToString();//TODO : fix this shit. This is not safe
@@ -90,14 +108,14 @@ namespace MMD_Core
             request.ContentType = "application/json";
             request.ContentLength = byteArray.Length;
 
-            Stream stream = request.GetRequestStream();
-            stream.Write(byteArray, 0, byteArray.Length);
-            stream.Close();
+            Stream dataStream = request.GetRequestStream();
+            dataStream.Write(byteArray, 0, byteArray.Length);
+            dataStream.Close();
 
             WebResponse response = request.GetResponse();
             Console.WriteLine(((HttpWebResponse)response).StatusDescription);
 
-            dataStream = response.GetResponseStream();
+            respStream = response.GetResponseStream();
 
             //cleanup the streams
             response.Close();
@@ -105,12 +123,11 @@ namespace MMD_Core
 
         private static void Debug_PrintStream(Stream dataStream)
         {
-            StreamReader reader = new StreamReader(dataStream);
-            string responseFromServer = reader.ReadToEnd();
-            Console.WriteLine(responseFromServer);
-
-            // Clean up the streams.
-            reader.Close();
+            using (StreamReader reader = new StreamReader(dataStream))
+            {
+                string responseFromServer = reader.ReadToEnd();
+                Console.WriteLine(responseFromServer);
+            }
         }
     }
 
