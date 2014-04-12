@@ -10,7 +10,7 @@ using Android.Views;
 using Android.Views.Animations;
 using Android.Widget;
 
-namespace ArcMenuLib.Elements.Dependencies
+namespace arcmenulib.elements.Dependencies
 {
     //todo : rename this class in order to reflect its purpose
     internal class OnClicklistener : Java.Lang.Object, Android.Views.View.IOnClickListener

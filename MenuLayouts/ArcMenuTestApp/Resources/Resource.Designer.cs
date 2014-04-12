@@ -26,34 +26,34 @@ namespace ArcMenuTestApp
 		
 		public static void UpdateIdValues()
 		{
-			global::ArcMenuLib.Resource.Attribute.childSize = global::ArcMenuTestApp.Resource.Attribute.childSize;
-			global::ArcMenuLib.Resource.Attribute.fromDegrees = global::ArcMenuTestApp.Resource.Attribute.fromDegrees;
-			global::ArcMenuLib.Resource.Attribute.leftHolderWidth = global::ArcMenuTestApp.Resource.Attribute.leftHolderWidth;
-			global::ArcMenuLib.Resource.Attribute.toDegrees = global::ArcMenuTestApp.Resource.Attribute.toDegrees;
-			global::ArcMenuLib.Resource.Drawable.composer_button = global::ArcMenuTestApp.Resource.Drawable.composer_button;
-			global::ArcMenuLib.Resource.Drawable.composer_button_normal = global::ArcMenuTestApp.Resource.Drawable.composer_button_normal;
-			global::ArcMenuLib.Resource.Drawable.composer_button_pressed = global::ArcMenuTestApp.Resource.Drawable.composer_button_pressed;
-			global::ArcMenuLib.Resource.Drawable.composer_icn_plus = global::ArcMenuTestApp.Resource.Drawable.composer_icn_plus;
-			global::ArcMenuLib.Resource.Drawable.composer_icn_plus_normal = global::ArcMenuTestApp.Resource.Drawable.composer_icn_plus_normal;
-			global::ArcMenuLib.Resource.Drawable.composer_icn_plus_pressed = global::ArcMenuTestApp.Resource.Drawable.composer_icn_plus_pressed;
-			global::ArcMenuLib.Resource.Drawable.Icon = global::ArcMenuTestApp.Resource.Drawable.Icon;
-			global::ArcMenuLib.Resource.Id.control_hint = global::ArcMenuTestApp.Resource.Id.control_hint;
-			global::ArcMenuLib.Resource.Id.control_layout = global::ArcMenuTestApp.Resource.Id.control_layout;
-			global::ArcMenuLib.Resource.Id.item_layout = global::ArcMenuTestApp.Resource.Id.item_layout;
-			global::ArcMenuLib.Resource.Layout.arc_menu = global::ArcMenuTestApp.Resource.Layout.arc_menu;
-			global::ArcMenuLib.Resource.Layout.ray_menu = global::ArcMenuTestApp.Resource.Layout.ray_menu;
-			global::ArcMenuLib.Resource.String.ApplicationName = global::ArcMenuTestApp.Resource.String.ApplicationName;
-			global::ArcMenuLib.Resource.String.Hello = global::ArcMenuTestApp.Resource.String.Hello;
-			global::ArcMenuLib.Resource.Styleable.ArcLayout = global::ArcMenuTestApp.Resource.Styleable.ArcLayout;
-			global::ArcMenuLib.Resource.Styleable.ArcLayout_childSize = global::ArcMenuTestApp.Resource.Styleable.ArcLayout_childSize;
-			global::ArcMenuLib.Resource.Styleable.ArcLayout_fromDegrees = global::ArcMenuTestApp.Resource.Styleable.ArcLayout_fromDegrees;
-			global::ArcMenuLib.Resource.Styleable.ArcLayout_toDegrees = global::ArcMenuTestApp.Resource.Styleable.ArcLayout_toDegrees;
-			global::ArcMenuLib.Resource.Styleable.ArcMenu = global::ArcMenuTestApp.Resource.Styleable.ArcMenu;
-			global::ArcMenuLib.Resource.Styleable.ArcMenu_childSize = global::ArcMenuTestApp.Resource.Styleable.ArcMenu_childSize;
-			global::ArcMenuLib.Resource.Styleable.ArcMenu_fromDegrees = global::ArcMenuTestApp.Resource.Styleable.ArcMenu_fromDegrees;
-			global::ArcMenuLib.Resource.Styleable.ArcMenu_toDegrees = global::ArcMenuTestApp.Resource.Styleable.ArcMenu_toDegrees;
-			global::ArcMenuLib.Resource.Styleable.RayLayout = global::ArcMenuTestApp.Resource.Styleable.RayLayout;
-			global::ArcMenuLib.Resource.Styleable.RayLayout_leftHolderWidth = global::ArcMenuTestApp.Resource.Styleable.RayLayout_leftHolderWidth;
+			global::arcmenulib.Resource.Attribute.childSize = global::ArcMenuTestApp.Resource.Attribute.childSize;
+			global::arcmenulib.Resource.Attribute.fromDegrees = global::ArcMenuTestApp.Resource.Attribute.fromDegrees;
+			global::arcmenulib.Resource.Attribute.leftHolderWidth = global::ArcMenuTestApp.Resource.Attribute.leftHolderWidth;
+			global::arcmenulib.Resource.Attribute.toDegrees = global::ArcMenuTestApp.Resource.Attribute.toDegrees;
+			global::arcmenulib.Resource.Drawable.composer_button = global::ArcMenuTestApp.Resource.Drawable.composer_button;
+			global::arcmenulib.Resource.Drawable.composer_button_normal = global::ArcMenuTestApp.Resource.Drawable.composer_button_normal;
+			global::arcmenulib.Resource.Drawable.composer_button_pressed = global::ArcMenuTestApp.Resource.Drawable.composer_button_pressed;
+			global::arcmenulib.Resource.Drawable.composer_icn_plus = global::ArcMenuTestApp.Resource.Drawable.composer_icn_plus;
+			global::arcmenulib.Resource.Drawable.composer_icn_plus_normal = global::ArcMenuTestApp.Resource.Drawable.composer_icn_plus_normal;
+			global::arcmenulib.Resource.Drawable.composer_icn_plus_pressed = global::ArcMenuTestApp.Resource.Drawable.composer_icn_plus_pressed;
+			global::arcmenulib.Resource.Drawable.Icon = global::ArcMenuTestApp.Resource.Drawable.Icon;
+			global::arcmenulib.Resource.Id.control_hint = global::ArcMenuTestApp.Resource.Id.control_hint;
+			global::arcmenulib.Resource.Id.control_layout = global::ArcMenuTestApp.Resource.Id.control_layout;
+			global::arcmenulib.Resource.Id.item_layout = global::ArcMenuTestApp.Resource.Id.item_layout;
+			global::arcmenulib.Resource.Layout.arc_menu = global::ArcMenuTestApp.Resource.Layout.arc_menu;
+			global::arcmenulib.Resource.Layout.ray_menu = global::ArcMenuTestApp.Resource.Layout.ray_menu;
+			global::arcmenulib.Resource.String.ApplicationName = global::ArcMenuTestApp.Resource.String.ApplicationName;
+			global::arcmenulib.Resource.String.Hello = global::ArcMenuTestApp.Resource.String.Hello;
+			global::arcmenulib.Resource.Styleable.ArcLayout = global::ArcMenuTestApp.Resource.Styleable.ArcLayout;
+			global::arcmenulib.Resource.Styleable.ArcLayout_childSize = global::ArcMenuTestApp.Resource.Styleable.ArcLayout_childSize;
+			global::arcmenulib.Resource.Styleable.ArcLayout_fromDegrees = global::ArcMenuTestApp.Resource.Styleable.ArcLayout_fromDegrees;
+			global::arcmenulib.Resource.Styleable.ArcLayout_toDegrees = global::ArcMenuTestApp.Resource.Styleable.ArcLayout_toDegrees;
+			global::arcmenulib.Resource.Styleable.ArcMenu = global::ArcMenuTestApp.Resource.Styleable.ArcMenu;
+			global::arcmenulib.Resource.Styleable.ArcMenu_childSize = global::ArcMenuTestApp.Resource.Styleable.ArcMenu_childSize;
+			global::arcmenulib.Resource.Styleable.ArcMenu_fromDegrees = global::ArcMenuTestApp.Resource.Styleable.ArcMenu_fromDegrees;
+			global::arcmenulib.Resource.Styleable.ArcMenu_toDegrees = global::ArcMenuTestApp.Resource.Styleable.ArcMenu_toDegrees;
+			global::arcmenulib.Resource.Styleable.RayLayout = global::ArcMenuTestApp.Resource.Styleable.RayLayout;
+			global::arcmenulib.Resource.Styleable.RayLayout_leftHolderWidth = global::ArcMenuTestApp.Resource.Styleable.RayLayout_leftHolderWidth;
 		}
 		
 		public partial class Attribute
@@ -165,7 +165,7 @@ namespace ArcMenuTestApp
 		{
 			
 			// aapt resource value: 0x7f070003
-			public const int arc_menu = 2131165187;
+			public const int arc_menu3 = 2131165187;
 			
 			// aapt resource value: 0x7f070004
 			public const int arc_menu_2 = 2131165188;
@@ -196,7 +196,7 @@ namespace ArcMenuTestApp
 			public const int arc_menu = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int Main = 2130903041;
+			public const int main = 2130903041;
 			
 			// aapt resource value: 0x7f030002
 			public const int ray_menu = 2130903042;

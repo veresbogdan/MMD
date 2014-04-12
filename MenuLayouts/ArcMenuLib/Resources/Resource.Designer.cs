@@ -9,9 +9,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Android.Runtime.ResourceDesignerAttribute("ArcMenuLib.Resource", IsApplication=false)]
+[assembly: global::Android.Runtime.ResourceDesignerAttribute("arcmenulib.Resource", IsApplication=false)]
 
-namespace ArcMenuLib
+namespace arcmenulib
 {
 	
 	

@@ -10,9 +10,9 @@ using Android.Runtime;
 using Android.Util;
 using Android.Views;
 using Android.Widget;
-using ArcMenuLib.Elements.Dependencies;
+using arcmenulib.elements.Dependencies;
 
-namespace ArcMenuLib.Elements
+namespace arcmenulib.elements
 {
     public class ArcMenu : RelativeLayout
     {

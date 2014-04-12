@@ -10,7 +10,7 @@ using Android.Views;
 using Android.Views.Animations;
 using Android.Widget;
 
-namespace ArcMenuLib.Elements.Dependencies
+namespace arcmenulib.elements.Dependencies
 {
     internal class RotateAndTranslateAnimation : Animation
     {

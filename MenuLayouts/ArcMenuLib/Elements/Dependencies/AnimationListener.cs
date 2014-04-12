@@ -10,7 +10,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 
-namespace ArcMenuLib.Elements.Dependencies
+namespace arcmenulib.elements.Dependencies
 {
     internal class AnimationListener : Java.Lang.Object, Android.Views.Animations.Animation.IAnimationListener
     {

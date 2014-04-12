@@ -9,13 +9,13 @@
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ArcMenuLib</RootNamespace>
+    <RootNamespace>arcmenulib</RootNamespace>
     <AssemblyName>ArcMenuLib</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
     <AndroidUseLatestPlatformSdk />
-    <TargetFrameworkVersion>v4.0.3</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.1</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -43,13 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Elements\ArcLayout.cs" />
-    <Compile Include="Elements\ArcMenu.cs" />
-    <Compile Include="Elements\Dependencies\AnimationListener.cs" />
-    <Compile Include="Elements\Dependencies\OnClicklistener.cs" />
-    <Compile Include="Elements\Dependencies\OnTouchListener.cs" />
-    <Compile Include="Elements\Dependencies\RotateAndTranslateAnimation.cs" />
-    <Compile Include="Elements\RayLayout.cs" />
+    <Compile Include="elements\ArcLayout.cs" />
+    <Compile Include="elements\ArcMenu.cs" />
+    <Compile Include="elements\Dependencies\AnimationListener.cs" />
+    <Compile Include="elements\Dependencies\OnClicklistener.cs" />
+    <Compile Include="elements\Dependencies\OnTouchListener.cs" />
+    <Compile Include="elements\Dependencies\RotateAndTranslateAnimation.cs" />
+    <Compile Include="elements\RayLayout.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

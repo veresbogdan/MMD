@@ -10,7 +10,7 @@ using Android.Util;
 using Android.Views;
 using Android.Widget;
 
-namespace ArcMenuLib.Elements
+namespace arcmenulib.elements
 {
     public class RayLayout : ViewGroup
     {

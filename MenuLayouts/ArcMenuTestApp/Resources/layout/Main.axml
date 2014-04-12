@@ -13,11 +13,11 @@
         android:layout_height="60dp"
         android:paddingLeft="5dp"
         android:paddingRight="5dp"/>-->
-        <ArcMenuLib.Elements.ArcMenu
-            android:id="@+id/arc_menu"
+        <arcmenulib.elements.ArcMenu
+            android:id="@+id/arc_menu3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
-        <ArcMenuLib.Elements.ArcMenu
+        <arcmenulib.elements.ArcMenu
             android:id="@+id/arc_menu_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

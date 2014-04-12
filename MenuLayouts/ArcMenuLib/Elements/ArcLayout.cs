@@ -12,9 +12,9 @@ using Android.Util;
 using Android.Views;
 using Android.Views.Animations;
 using Android.Widget;
-using ArcMenuLib.Elements.Dependencies;
+using arcmenulib.elements.Dependencies;
 
-namespace ArcMenuLib.Elements
+namespace arcmenulib.elements
 {
     public class ArcLayout : ViewGroup
     {
@@ -50,7 +50,7 @@ namespace ArcMenuLib.Elements
 
                 mChildSize = value;
 
-                requestLayout();
+                RequestLayout();
             }
         }
 
@@ -156,7 +156,7 @@ namespace ArcMenuLib.Elements
 
             if (!showAnimation)
             {
-                requestLayout();
+                RequestLayout();
             }
 
             Invalidate();
@@ -271,7 +271,7 @@ namespace ArcMenuLib.Elements
                 GetChildAt(i).ClearAnimation();
             }
 
-            requestLayout();
+            RequestLayout();
         }
         #endregion
 
@@ -284,13 +284,7 @@ namespace ArcMenuLib.Elements
 
             mFromDegrees = fromDegrees;
             mToDegrees = toDegrees;
-
-            requestLayout();
-        }
-
-        private void requestLayout()
-        {
-            throw new NotImplementedException();
+            RequestLayout();
         }
     }
 }

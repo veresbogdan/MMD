@@ -6,7 +6,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
-using ArcMenuLib.Elements;
+using arcmenulib.elements;
 
 namespace ArcMenuTestApp
 {
@@ -21,31 +21,33 @@ namespace ArcMenuTestApp
             base.OnCreate(bundle);
 
             // Set our view from the "main" layout resource
-            SetContentView(Resource.Layout.Main);
+            SetContentView(Resource.Layout.main);
 
-            ArcMenu arcMenu = FindViewById<ArcMenu>(Resource.Id.arc_menu);
+            ArcMenu arcMenu = FindViewById<ArcMenu>(Resource.Id.arc_menu3);
             ArcMenu arcMenu2 = FindViewById<ArcMenu>(Resource.Id.arc_menu_2);
 
             initArcMenu(arcMenu, ITEM_DRAWABLES);
             initArcMenu(arcMenu2, ITEM_DRAWABLES);
         }
 
-        private void initArcMenu(ArcMenu menu, int[] itemDrawables) {
-        int itemCount = itemDrawables.Length;
-        for (int i = 0; i < itemCount; i++) {
-            ImageView item = new ImageView(this);
-            item.SetImageResource(itemDrawables[i]);
+        private void initArcMenu(ArcMenu menu, int[] itemDrawables)
+        {
+            int itemCount = itemDrawables.Length;
+            for (int i = 0; i < itemCount; i++)
+            {
+                ImageView item = new ImageView(this);
+                item.SetImageResource(itemDrawables[i]);
 
-            //int position = i;
-            //menu.addItem(item, new OnClickListener() {
+                int position = i;
+                menu.addItem(item, new OnClickListenerEmpty());
+            }
+        }
 
-            //    @Override
-            //    public void onClick(View v) {
-            //        Toast.makeText(MainActivity.this, "position:" + position, Toast.LENGTH_SHORT).show();
-            //    }
-            //});
+        class OnClickListenerEmpty : Java.Lang.Object, Android.Views.View.IOnClickListener
+        {
+            public void OnClick(View v)
+            {
+            }
         }
     }
-    }
 }
-
