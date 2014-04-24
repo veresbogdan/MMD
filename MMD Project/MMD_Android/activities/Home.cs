@@ -12,22 +12,34 @@ using Android.Widget;
 
 namespace MMD_Android.activities
 {
-    [Activity(Label = "My Activity")]
+    [Activity(Label = "Homescreen")]
     public class Home : BaseActivity
     {
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
-			String extra = Intent.GetStringExtra ("User") ?? "Data not available";
+            String extra = Intent.GetStringExtra("User") ?? "Data not available";
 
             // Create your application here
-			TextView textView = new TextView(this);
-			textView.TextSize = 30;
-			textView.Text = extra;
+            SetContentView(Resource.Layout.Home);
 
-			// Set the text view as the activity layout
-			SetContentView(textView);
-			//SetContentView(Resource.Layout.Home);
+            TextView textView = FindViewById<TextView>(Resource.Id.textView_Username);
+            textView.Text = extra;
+
+            Button goToBogdan = FindViewById<Button>(Resource.Id.button_Veres);
+            Button goToMiki = FindViewById<Button>(Resource.Id.button_Miki);
+
+            goToBogdan.Click += (sender, args) =>
+            {
+                var bogdan = new Intent(this, typeof(Bogdan));
+                StartActivity(bogdan);
+            };
+
+            goToMiki.Click += (sender, args) =>
+            {
+                var miki = new Intent(this, typeof(Miki));
+                StartActivity(miki);
+            };
         }
     }
 }
