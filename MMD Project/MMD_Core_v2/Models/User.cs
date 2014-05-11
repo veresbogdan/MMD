@@ -4,11 +4,13 @@ namespace MMD_Core_v2
 {
 	public class User
 	{
-		public String name { get; set;}
+		public String Nickname { get; set;}
 
-		public String password { get; set;}
+		public String Password { get; set;}
 
-		public String email { get; set;}
+		public String Email { get; set;}
+
+        public String Token { get; set;}
 
 		public User ()
 		{
@@ -16,7 +18,7 @@ namespace MMD_Core_v2
 
 		override public String ToString()
 		{	
-			return name + " " + password + " " + email;
+			return Nickname + " " + Email;
 		}
 	}
 }

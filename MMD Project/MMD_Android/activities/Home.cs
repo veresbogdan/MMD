@@ -20,6 +20,12 @@ namespace MMD_Android.activities
             base.OnCreate(bundle);
             String extra = Intent.GetStringExtra("User") ?? "Data not available";
 
+            var builder = new AlertDialog.Builder(this);
+            builder.SetTitle("Logged in");
+            builder.SetMessage(extra);
+            builder.SetPositiveButton("Ok", delegate { Finish(); });
+            builder.Create().Show();
+
             // Create your application here
             SetContentView(Resource.Layout.Home);
 
