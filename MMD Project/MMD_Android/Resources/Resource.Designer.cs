@@ -97,50 +97,59 @@ namespace MMD_Android
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f070004
-			public const int button_Categories = 2131165188;
-			
-			// aapt resource value: 0x7f070006
-			public const int button_Friends = 2131165190;
+			// aapt resource value: 0x7f070005
+			public const int button_Categories = 2131165189;
 			
 			// aapt resource value: 0x7f070007
-			public const int button_Groups = 2131165191;
-			
-			// aapt resource value: 0x7f07000b
-			public const int button_Login = 2131165195;
+			public const int button_Friends = 2131165191;
 			
 			// aapt resource value: 0x7f070008
-			public const int button_Memoticons = 2131165192;
-			
-			// aapt resource value: 0x7f070005
-			public const int button_Messages = 2131165189;
-			
-			// aapt resource value: 0x7f070003
-			public const int button_Miki = 2131165187;
+			public const int button_Groups = 2131165192;
 			
 			// aapt resource value: 0x7f07000c
-			public const int button_Signup = 2131165196;
-			
-			// aapt resource value: 0x7f070002
-			public const int button_Veres = 2131165186;
-			
-			// aapt resource value: 0x7f07000d
-			public const int editText1 = 2131165197;
-			
-			// aapt resource value: 0x7f07000e
-			public const int editText2 = 2131165198;
+			public const int button_Login = 2131165196;
 			
 			// aapt resource value: 0x7f070009
-			public const int email_input_field = 2131165193;
+			public const int button_Memoticons = 2131165193;
 			
-			// aapt resource value: 0x7f070000
-			public const int imageView1 = 2131165184;
+			// aapt resource value: 0x7f070006
+			public const int button_Messages = 2131165190;
+			
+			// aapt resource value: 0x7f070004
+			public const int button_Miki = 2131165188;
+			
+			// aapt resource value: 0x7f07000d
+			public const int button_Signup = 2131165197;
+			
+			// aapt resource value: 0x7f070003
+			public const int button_Veres = 2131165187;
+			
+			// aapt resource value: 0x7f07000e
+			public const int editText1 = 2131165198;
+			
+			// aapt resource value: 0x7f07000f
+			public const int editText2 = 2131165199;
 			
 			// aapt resource value: 0x7f07000a
-			public const int password_input_field = 2131165194;
+			public const int email_input_field = 2131165194;
 			
 			// aapt resource value: 0x7f070001
-			public const int textView_Username = 2131165185;
+			public const int imageView1 = 2131165185;
+			
+			// aapt resource value: 0x7f070011
+			public const int imageView_Categ = 2131165201;
+			
+			// aapt resource value: 0x7f070010
+			public const int listview_Categories = 2131165200;
+			
+			// aapt resource value: 0x7f07000b
+			public const int password_input_field = 2131165195;
+			
+			// aapt resource value: 0x7f070000
+			public const int textView_Title = 2131165184;
+			
+			// aapt resource value: 0x7f070002
+			public const int textView_Username = 2131165186;
 			
 			static Id()
 			{
@@ -159,13 +168,16 @@ namespace MMD_Android
 			public const int Bogdan = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int Home = 2130903041;
+			public const int CategoryElementLayout = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int LoginSignup = 2130903042;
+			public const int Home = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public const int Miki = 2130903043;
+			public const int LoginSignup = 2130903043;
+			
+			// aapt resource value: 0x7f030004
+			public const int Miki = 2130903044;
 			
 			static Layout()
 			{
