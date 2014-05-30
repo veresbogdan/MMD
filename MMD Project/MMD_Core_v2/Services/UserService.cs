@@ -1,21 +1,27 @@
-﻿using System;
+﻿using MMD_Core_v2.controller;
+using Newtonsoft.Json;
+using System;
 
 namespace MMD_Core_v2
 {
 	public class UserService
 	{
+        private UserController userController = new UserController();
+
 		public UserService ()
 		{
 		}
 
 		public User loginUser(String username, String password) 
 		{
-			User user = new User ();
+            String responseUser = userController.loginUser(username, password);
 
-			user.name = username;
-			user.password = password;
+            if (responseUser != null)
+            {
+                return JsonConvert.DeserializeObject<User>(responseUser);
+            }
 
-			return user;
+			return null;
 		}
 	}
 }

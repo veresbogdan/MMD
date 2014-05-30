@@ -51,6 +51,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+<<<<<<< HEAD
     <Reference Include="System.Net.Http.Extensions">
       <HintPath>..\packages\Microsoft.Net.Http.2.2.20\lib\portable-net45+win8\System.Net.Http.Extensions.dll</HintPath>
     </Reference>
@@ -58,7 +59,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Microsoft.Net.Http.2.2.20\lib\portable-net45+win8\System.Net.Http.Primitives.dll</HintPath>
     </Reference>
+=======
     <Reference Include="System.Json" />
+>>>>>>> 0441dec70c41243ae670420d7e20f4e1e8296345
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Xml" />
     <Reference Include="Xamarin.Auth.Android">
@@ -93,8 +96,11 @@
     <AndroidResource Include="Resources\layout\Miki.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
+<<<<<<< HEAD
     <AndroidResource Include="Resources\layout\CategoryElementLayout.axml">
+=======
     <AndroidResource Include="Resources\layout\NewA.axml">
+>>>>>>> 0441dec70c41243ae670420d7e20f4e1e8296345
       <SubType>AndroidResource</SubType>
     </AndroidResource>
   </ItemGroup>
